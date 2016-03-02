@@ -3,9 +3,9 @@ import {Component} from 'angular2/core';
 @Component({
     selector: 'app',
     template: `
-        <h3 (click)="onSelect()" [class.clicked]="showDetails === true">{{contact.firstName}} {{contact.lastName}}</h3>
+        <h3 (click)="onSelect()" [class.clicked]="showDetail === true">{{contact.firstName}} {{contact.lastName}}</h3>
         <input [(ngModel)]="contact.firstName" type="text">
-        <div *ngIf="showDetails === true">
+        <div *ngIf="showDetail === true">
             Phone Number: {{contact.phone}} <br>
             E-mail: {{contact.email}}
         </div>
@@ -14,9 +14,9 @@ import {Component} from 'angular2/core';
 })
 export class AppComponent {
     public contact = {firstName: "Jacob", lastName: "Smiley", phone: "510-867-5309",  email: "jacob.smiley@gmail.com"};
-    public showDetails = false;
+    public showDetail = false;
 
     onSelect() {
-        this.showDetails = true;
+        this.showDetail = true;
     }
 }
