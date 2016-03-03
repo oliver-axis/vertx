@@ -11,6 +11,7 @@ import {NewContactComponent} from "./contacts/new-contact.component";
             <nav>
                 <a [routerLink]="['Contacts']">Contacts</a>
                 <a [routerLink]="['NewContact']">New Contact</a>
+                <a [routerLink]="['Heroes']">Tutorial</a>
             </nav>
         </header>
         <div class="main">
@@ -18,13 +19,14 @@ import {NewContactComponent} from "./contacts/new-contact.component";
         </div>
         <!--<contact-list></contact-list>-->
     `,
-    directives:[ContactListComponent, ROUTER_DIRECTIVES],
+    directives:[ROUTER_DIRECTIVES], // ContactListComponent,
     styleUrls: ["../src/css/app.css"]
 })
 
 @RouteConfig([
     {path: '/contacts', name: 'Contacts', component: ContactListComponent, useAsDefault: true},
-    {path: '/newcontact', name: 'NewContact', component: NewContactComponent}
+    {path: '/newcontact', name: 'NewContact', component: NewContactComponent},
+    {path: '/tutorial', name: 'Heroes', component: NewContactComponent}
 ])
 export class AppComponent {
 
