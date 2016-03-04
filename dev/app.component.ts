@@ -3,6 +3,7 @@ import {ROUTER_DIRECTIVES} from 'angular2/router';
 import {RouteConfig} from 'angular2/router';
 import {ContactListComponent} from "./contacts/contact-list.component";
 import {NewContactComponent} from "./contacts/new-contact.component";
+import {TourOfHeroesComponent} from "./tutorial/tour-of-heroes.component";
 
 @Component({
     selector: 'app',
@@ -19,14 +20,14 @@ import {NewContactComponent} from "./contacts/new-contact.component";
         </div>
         <!--<contact-list></contact-list>-->
     `,
-    directives:[ROUTER_DIRECTIVES], // ContactListComponent,
+    directives:[ContactListComponent, ROUTER_DIRECTIVES], // ,
     styleUrls: ["../src/css/app.css"]
 })
 
 @RouteConfig([
     {path: '/contacts', name: 'Contacts', component: ContactListComponent, useAsDefault: true},
     {path: '/newcontact', name: 'NewContact', component: NewContactComponent},
-    {path: '/tutorial', name: 'Heroes', component: NewContactComponent}
+    {path: '/tutorial', name: 'Heroes', component: TourOfHeroesComponent}
 ])
 export class AppComponent {
 
