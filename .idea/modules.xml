@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/angular-2.iml" filepath="$PROJECT_DIR$/angular-2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/server2/server2.iml" filepath="$PROJECT_DIR$/server2/server2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vertx2.iml" filepath="$PROJECT_DIR$/vertx2.iml" />
     </modules>
   </component>
 </project>

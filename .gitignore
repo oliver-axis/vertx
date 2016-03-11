@@ -1,3 +1,10 @@
+*.iml
+*.ipr
+
 /node_modules
 /app
 /src
+
+# IntelliJ
+/.idea/*
+!.idea/codeStyleSettings.xml
